@@ -2,7 +2,7 @@ package ejemploHashMap;
 
 import java.util.Objects;
 
-public class Contactos {
+public class Contactos implements Comparable <Contactos>{
 
 	private int idContacto;
 	private String nombre;
@@ -60,6 +60,9 @@ public class Contactos {
 		Contactos other = (Contactos) obj;
 		return Objects.equals(correo, other.correo) && idContacto == other.idContacto
 				&& Objects.equals(nombre, other.nombre);
+	}
+	public int compareTo (Contactos c) {
+		return (this.getNombre().toLowerCase().compareTo(c.getNombre().toLowerCase()));
 	}
 
 }

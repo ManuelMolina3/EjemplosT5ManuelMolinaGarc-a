@@ -50,5 +50,8 @@ public class Agenda {
 	public void remove(int id) {
 		lista.remove(findById(id));
 	}
+	public void editTlf (Contactos c, int numTlfNuevo) {
+		lista.replace(c, numTlfNuevo);
+	}
 
 }
