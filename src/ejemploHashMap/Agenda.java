@@ -24,7 +24,7 @@ public class Agenda {
 		return "Agenda [lista=" + lista + "]";
 	}
 
-	public void add(Contactos c, Integer num) {
+		public void add(Contactos c, Integer num) {
 		lista.put(c, num);
 	}
 
